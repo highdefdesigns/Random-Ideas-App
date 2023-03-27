@@ -4,9 +4,9 @@ class IdeaList {
   constructor() {
     this._ideaListEl = document.querySelector('#idea-list');
 
+    this._ideas = [];
     this.getIdeas();
 
-    this._ideas = [];
     this._validTags = new Set();
     this._validTags.add('technology');
     this._validTags.add('software');
